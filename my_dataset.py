@@ -10,7 +10,7 @@ class DriveDataset(Dataset):
         data_root = os.path.join(root, "TP-Dataset")
         assert os.path.exists(data_root), f"path '{data_root}' does not exists."
         image_dir = os.path.join(data_root, 'JPEGImages')
-        mask_dir = os.path.join(data_root, 'ground truth')
+        mask_dir = os.path.join(data_root, 'Ground truth')
 
         txt_path = os.path.join(data_root, "Index", txt_name)
         assert os.path.exists(txt_path), "file '{}' does not exist.".format(txt_path)
