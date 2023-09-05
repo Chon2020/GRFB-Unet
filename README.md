@@ -74,7 +74,7 @@ TP-Dataset
 For each part in TP-Dataset, the images are stored in the file ./JPEGImages, and ground truths are stored in file ./ground truth. The masked images are stored in the file ./ SegmentationClassPNG and only used for visualization, which can be removed without any influence.
 The indexes of train / validate / test samples are stored in flie ./Index.
 Then, you can replace the file ./data/ TP-dataset with the downloaded dataset for training phase. 
-```
+
 ### Training
 
 ```console
@@ -111,3 +111,27 @@ optional arguments:
 
 ```
 For simple, we have just fixed all these optional arguments inside the main function of predict.py, which can be changed manually.
+
+## Citation
+
+```
+@article{Zhang2023GrfbUnetAN,
+  title={Grfb-Unet: A New Multiscale Attention Network with Group Receptive Field Block for Tactile Paving Segmentation},
+  author={Xingli Zhang and Lei Liang and Sheng Zhao and Zhihui Wang},
+  journal={SSRN Electronic Journal},
+  year={2023},
+  url={https://api.semanticscholar.org/CorpusID:256625405}
+}
+```
+## Acknowledgement
+Our GRFB-Unet is constructed based on the basic structure of [Unet](https://arxiv.org/abs/1505.04597). Thanks for their wonderful works.
+```
+@inproceedings{ronneberger2015u,
+  title={U-net: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={Medical Image Computing and Computer-Assisted Intervention--MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+```
