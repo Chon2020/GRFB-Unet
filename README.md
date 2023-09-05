@@ -57,22 +57,23 @@ pip install -r requirements.txt
 
 ```
 TP-Dataset
-   |——————Part01
-   |        └——————JPEGImages
-   |        └——————ground truth
-   |        └——————SegmentationClassPNG
-   … …
-   └——————Part14 
-   |        └——————JPEGImages
-   |        └——————ground truth
-   |        └——————SegmentationClassPNG
-   └——————Segmentation
+   |——————JPEGImages
+   |        └——————Part01
+   |        └——————… …
+   |——————ground truth
+   |        └——————Part01
+   |        └——————… …
+   └——————SegmentationClassPNG
+   |        └——————Part01
+   |        └——————… …
+   └——————Index
             └——————train.txt
             └——————val.txt
             └——————predict.txt
 ```
 For each part in TP-Dataset, the images are stored in the file ./JPEGImages, and ground truths are stored in file ./ground truth. The masked images are stored in the file ./ SegmentationClassPNG and only used for visualization, which can be removed without any influence.
-Then, you can replace the file ./data/ TP-dataset for training phase. 
+The indexes of train / validate / test samples are stored in flie ./Index.
+Then, you can replace the file ./data/ TP-dataset with the downloaded dataset for training phase. 
 ```
 ### Training
 
