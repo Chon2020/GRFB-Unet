@@ -25,6 +25,7 @@ Tactile paving plays a crucial role in the travel of visually impaired people. T
 | DeepLabV3+ | 91.53  | 94.85   | 98.85      | 85.26  | 90.59  | 93.55     |
 | Maskrcnn   | 83.52  | 88.00   | 96.14      | 77.31  | 77.17  | 90.38     |
 | GRFB-Unet  | 94.85  | 96.76   | 98.85      | 91.21  | 94.20  | 96.65     |
+
 Notation: The results in the table are all percentage data (%).
 ## Installation
 ****
