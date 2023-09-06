@@ -50,9 +50,9 @@ pip install -r requirements.txt
 ***
 **The TP-dataset can be downloaded from follows links:**
 
-&ensp;1. [Google Drive](http://drive.google.com/)
+&ensp;1. [Baidu Net-disk](https://pan.baidu.com/s/1YgutfaiVE2KkqcKnWfGLSQ) (password: 9ope)
 
-&ensp;2. [Baidu Net-disk](https://pan.baidu.com/)
+&ensp;2. [Google Drive](https://drive.google.com/drive/folders/1jByE5f_oUKpYdoR829wLqFSqlBYtOZM6?usp=sharing)
 
 * After downloading, you should prepare the data in the following structure
 
