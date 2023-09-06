@@ -61,7 +61,7 @@ TP-Dataset
    |——————JPEGImages
    |        └——————Part01
    |        └——————… …
-   |——————Ground truth
+   |——————GroundTruth
    |        └——————Part01
    |        └——————… …
    └——————SegmentationClassPNG
