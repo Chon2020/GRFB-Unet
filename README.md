@@ -117,7 +117,7 @@ For simple, we have just fixed all these optional arguments inside the main func
 
 ```
 @article{Zhang2023GrfbUNetAN,
-  title={Grfb-UNet: A New Multiscale Attention Network with Group Receptive Field Block for Tactile Paving Segmentation},
+  title={GRFB-UNet: A New Multiscale Attention Network with Group Receptive Field Block for Tactile Paving Segmentation},
   author={Xingli Zhang and Lei Liang and Sheng Zhao and Zhihui Wang},
   journal={SSRN Electronic Journal},
   year={2023},
