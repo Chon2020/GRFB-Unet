@@ -6,9 +6,13 @@
 
 * Structure of the proposed GRFB-UNet network:
 ![](assets/img_1.png)
+
+* Structure of the proposed GRFB module:
+![](assets/img_2.png)
+
 ## Abstract
 ******
-Tactile paving plays a crucial role in the travel of visually impaired people. Therefore, it is quite meaningful to identity the shape and location of tactile paving to support the mobility of the visually impaired, and visual segmentation technology is suitable of this task. To effectively improve the accuracy and robustness of tactile paving segmentation, a novel tactile paving segmentation method that combines UNet network and multi-scale feature extraction is proposed in this paper. It adds the structure of group receptive field block (GRAB) in the UNet network to obtain multi-scale receptive fields of the tactile paving. This method uses group convolution to reduce its calculation complexity. Meantime, small-scale convolution is used after each group convolution to achieve cross-channel information interaction and integration, aiming to extract more abundant high-level features. In this paper, we have constructed the dataset of tactile paving in various scenarios, and labeled for experimental evaluation. Furthermore, a comparative analysis with the typical networks and structure modules have been demonstrated in details. The experimental results show that the proposed network achieves the best performance among those compared networks on tactile paving segmentation, and provides a valuable reference for the detection of tactile paving.
+Tactile paving plays a crucial role in the travel of visually impaired people. Therefore, it is quite meaningful to identity the shape and location of tactile paving to support the mobility of the visually impaired, and visual segmentation technology is suitable of this task. To effectively improve the accuracy and robustness of tactile paving segmentation, a novel tactile paving segmentation method that combines UNet network and multi-scale feature extraction is proposed in this paper. It adds the structure of group receptive field block (GRFB) in the UNet network to obtain multi-scale receptive fields of the tactile paving. This method uses group convolution to reduce its calculation complexity. Meantime, small-scale convolution is used after each group convolution to achieve cross-channel information interaction and integration, aiming to extract more abundant high-level features. In this paper, we have constructed the dataset of tactile paving in various scenarios, and labeled for experimental evaluation. Furthermore, a comparative analysis with the typical networks and structure modules have been demonstrated in details. The experimental results show that the proposed network achieves the best performance among those compared networks on tactile paving segmentation, and provides a valuable reference for the detection of tactile paving.
 
 ## Experimental results
 ****
