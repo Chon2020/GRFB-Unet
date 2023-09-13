@@ -95,7 +95,7 @@ class BasicConv(nn.Module):
 class GRFB(nn.Module):
 
         def __init__(self, in_channels, out_channels, stride=1, scale=0.1, visual=12):
-            super(BasicRFB, self).__init__()
+            super(GRFB, self).__init__()
             self.scale = scale
             self.out_channels = out_channels
             inter_planes = in_channels // 8
@@ -142,13 +142,13 @@ class GRFB(nn.Module):
             return out
 
 
-class UNet(nn.Module):
+class GRFBUNet(nn.Module):
     def __init__(self,
                  in_channels: int = 1,
                  num_classes: int = 2,
                  bilinear: bool = True,
                  base_c: int = 64):
-        super(UNet, self).__init__()
+        super(GRFBUNet, self).__init__()
         self.in_channels = in_channels
         self.num_classes = num_classes
         self.bilinear = bilinear
