@@ -12,7 +12,7 @@
 
 ## Abstract
 ******
-Tactile paving plays a crucial role in the travel of visually impaired, and assists them to find the way forward. Therefore, it is quite meaningful to identify the regions and trends of tactile paving to support the independent walking of the visually impaired. Visual segmentation technology shows potential to segment the regions of tactile paving, and the shapes of these regions can be used to further check the road trends. To effectively improve the accuracy and robustness of tactile paving segmentation, a novel tactile paving segmentation method that combines UNet network and multi-scale feature extraction is proposed in this work. The structure of group receptive field block (GRFB) has been embedded into the basic UNet network to obtain multi-scale receptive fields of the tactile paving. Aiming to enhance the computational efficiency, the strategy of group convolution is adopted to combine with GRFB module. Meanwhile, small-scale convolution is used after each group convolution to achieve cross-channel information interaction and integration, aiming to extract more abundant high-level features. In this paper, we have constructed the dataset of tactile paving in various scenarios, and labeled them for experimental evaluation. Furthermore, a comparative analysis with the typical networks and structure modules has been demonstrated in details. The experimental results show that the proposed network achieves the best overall performance among those compared networks on tactile paving segmentation, and provides a valuable reference for the segmentation of tactile paving.
+Tactile paving plays a crucial role in the travel of visually impaired people. Therefore, it is quite meaningful to identity the shape and location of tactile paving to support the mobility of the visually impaired, and visual segmentation technology is suitable of this task. To effectively improve the accuracy and robustness of tactile paving segmentation, a novel tactile paving segmentation method that combines UNet network and multi-scale feature extraction is proposed in this paper. It adds the structure of group receptive field block (GRFB) in the UNet network to obtain multi-scale receptive fields of the tactile paving. This method uses group convolution to reduce its calculation complexity. Meantime, small-scale convolution is used after each group convolution to achieve cross-channel information interaction and integration, aiming to extract more abundant high-level features. In this paper, we have constructed the dataset of tactile paving in various scenarios, and labeled for experimental evaluation. Furthermore, a comparative analysis with the typical networks and structure modules have been demonstrated in details. The experimental results show that the proposed network achieves the best performance among those compared networks on tactile paving segmentation, and provides a valuable reference for the detection of tactile paving.
 
 ## Experimental results
 ****
@@ -22,7 +22,7 @@ Tactile paving plays a crucial role in the travel of visually impaired, and assi
 | Method     | MIoU   | mPA     | Accuracy   | IoU    | Recall | Preision  |
 |------------|--------|---------|------------|--------|--------|-----------|
 | PSPNet     | 93.40  | 95.75   | 98.51      | 88.49  | 92.08  | 95.77     |
-| SegNet     | 82.91  | 90.91   | 95.64      | 70.69  | 84.62  | 81.12     |
+| SegNET     | 82.91  | 90.91   | 95.64      | 70.69  | 84.62  | 81.12     |
 | FCN        | 72.79  | 78.21   | 93.51      | 52.57  | 57.84  | 85.21     |
 | Simt       | 85.34  | 87.77   | 96.74      | 74.28  | 75.83  | 97.32     |
 | DeepLabV3  | 92.60  | 95.23   | 98.32      | 87.09  | 91.11  | 95.18     |
@@ -78,7 +78,7 @@ TP-Dataset
 ```
 For each part in TP-Dataset, the images are stored in the file ./JPEGImages, and ground truths are stored in file ./ground truth. The masked images are stored in the file ./ SegmentationClassPNG and only used for visualization, which can be removed without any influence.
 The indexes of train / validate / test samples are stored in flie ./Index.
-Then, you can replace the file ./data/ TP-dataset with the downloaded dataset for training phase. 
+Then, you can replace the file ./data/TP-dataset in ${GRFBNet_ROOT} with the downloaded dataset for training phase. 
 
 ### Training
 
@@ -92,7 +92,7 @@ usage: train.py [--data-path DP] [--num-classes NC] [--device D]
 Train the UNet on images and target masks
 
 optional arguments:
-  '--data-path', default='data/', help='DRIVE root'
+  '--data-path', default='data/', help='dataset file path including ./TP-Dataset'
   '-num-classes', default=1, type=int
   '--device', default='cuda', help='training device'
   '-b', '--batch-size', default=8, type=int
