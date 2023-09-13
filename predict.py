@@ -19,7 +19,7 @@ def main():
     classes = 1  # exclude background
     weights_path = "./save_weights/model_best.pth"
     img_path = "data/TP-Dataset/JPEGImages"
-    txt_path = "data/TP-Dataset/ImageSets/Segmentation/predict.txt"
+    txt_path = "data/TP-Dataset/Index/predict.txt"
     save_weights = "./predict"
 
     assert os.path.exists(weights_path), f"weights {weights_path} not found."

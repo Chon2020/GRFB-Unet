@@ -134,12 +134,6 @@ def main(args):
                          f"dice coefficient: {dice:.3f}\n"
             f.write(train_info + val_info + "\n\n")
 
-        if epoch % 100 == 0:
-            torch.save(save_file, "save_weights/model_{}.pth".format(epoch))
-
-        if best_dice < dice:
-                best_dice = dice
-                torch.save(save_file, "save_weights/model_best.pth")
 
         save_file = {"model": model.state_dict(),
                      "optimizer": optimizer.state_dict(),
@@ -147,9 +141,16 @@ def main(args):
                      "epoch": epoch,
                      "args": args}
 
-        if args.amp:
-            save_file["scaler"] = scaler.state_dict()
-        torch.save(save_file, "save_weights/model_{}.pth".format(epoch))
+        if epoch % 100 == 0:
+            torch.save(save_file, "save_weights/model_{}.pth".format(epoch))
+
+        if best_dice < dice:
+            best_dice = dice
+            torch.save(save_file, "save_weights/model_best.pth")
+
+        #if args.amp:
+         #   save_file["scaler"] = scaler.state_dict()
+        #torch.save(save_file, "save_weights/model_{}.pth".format(epoch))
 
 
     total_time = time.time() - start_time
