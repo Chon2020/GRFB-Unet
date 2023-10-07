@@ -20,7 +20,7 @@ def main():
     weights_path = "./save_weights/model_best.pth"
     img_path = "data/TP-Dataset/JPEGImages"
     txt_path = "data/TP-Dataset/Index/predict.txt"
-    save_weights = "./predict"
+    save_result = "./predict"
 
     assert os.path.exists(weights_path), f"weights {weights_path} not found."
     assert os.path.exists(img_path), f"image {img_path} not found."
@@ -84,10 +84,21 @@ def main():
         mask = mask.convert("L")
         name = file[0:4]
 
-        mask.save(os.path.join(save_weights, f'{name}.png'))
+        mask.save(os.path.join(save_result, f'{name}.png'))
     fps = 1 / (total_time / 286)
     print("FPS: {}".format(fps))
 
+def parse_args():
+    import argparse
+    parser.add_argument("--weights_path", default="./save_weights/model_best.pth", help="The root of TP-Dataset ground truth list file")
+    parser.add_argument("--img_path", default="data/TP-Dataset/JPEGImages", help="The path of testing sample images")
+    parser.add_argument("--txt_path", default="data/TP-Dataset/Index/predict.txt", help="The path of testing sample list")
+    parser.add_argument("--save_result", default="./predict", help="The path of saved predicted results in images")
+
+    args = parser.parse_args()
+
+    return args
 
 if __name__ == '__main__':
+    args = parse_args()
     main()
