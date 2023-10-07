@@ -1,0 +1,5 @@
+opencv-python  
+opencv-contrib-python
+libgl1-mesa-glx
+libglib2.0-dev
+matplotlib
