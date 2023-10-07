@@ -54,6 +54,7 @@ Also, the environment can be installed with following orders instead:
 cd ${GRFBNet_ROOT}
 conda create -n py python=3.7
 conda activate py
+conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.1 -c pytorch
 pip install -r requirements.txt
 ```
 or
@@ -61,6 +62,7 @@ or
 cd ${GRFBNet_ROOT}
 conda create -n py python=3.7
 conda activate py
+conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.1 -c pytorch
 conda install --yes --file requirements.txt
 ```
 
