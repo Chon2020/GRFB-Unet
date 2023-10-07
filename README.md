@@ -49,6 +49,15 @@ A typical script of the environment installation (support in Linux; while the li
 ```bash
 bash demo.sh
 ```
+Also, the environment can be installed with following orders instead:
+```bash
+pip install -r requirements.txt
+```
+or
+```bash
+conda install --yes --file requirements.txt
+```
+
 ## Data preparation
 ***
 **The TP-dataset can be downloaded from follows links:**
