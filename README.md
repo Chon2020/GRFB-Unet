@@ -51,10 +51,16 @@ bash demo.sh
 ```
 Also, the environment can be installed with following orders instead:
 ```bash
+cd ${GRFBNet_ROOT}
+conda create -n py python=3.7
+conda activate py
 pip install -r requirements.txt
 ```
 or
 ```bash
+cd ${GRFBNet_ROOT}
+conda create -n py python=3.7
+conda activate py
 conda install --yes --file requirements.txt
 ```
 
