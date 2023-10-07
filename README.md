@@ -38,9 +38,13 @@ Notation: The results in the table are all percentage data (%).
 * Install dependencies. CUDA, Python and PyTorch.
 
 &ensp;1. [Install CUDA](https://developer.nvidia.com/cuda-downloads)
-&ensp;2. Install anaconda, and reate conda environment;
-&ensp;3. [Install PyTorch 1.13 or later](https://pytorch.org/get-started/locally/)
+
+&ensp;2. Install anaconda, and reate conda environment
+
+&ensp;3. [Install PyTorch 1.5.1 or later](https://pytorch.org/get-started/locally/)
+
 &ensp;4. Install other dependencies.
+
 A typical script of the environment installation is given as follows:
 ```bash
 bash demo.sh
