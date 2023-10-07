@@ -128,6 +128,7 @@ optional arguments:
 python predict.py
 usage: predict.py [--weights_path WP] [--img_path IP]
                 [--txt_path TP] [--save_result SR]
+
 optional arguments:
 '--weights_path', default='./save_weights/model_best.pth', help='The root of TP-Dataset ground truth list file')
 '--img_path', default='data/TP-Dataset/JPEGImages', help='The path of testing sample images')
