@@ -103,7 +103,7 @@ usage: train.py [--data-path DP] [--num-classes NC] [--device D]
 		[--weight-decay WD][--print-freq PF][--resume R]
 		[--start-epoch SE][--save-best SB][--amp A]
 
-Train the UNet on images and target masks
+Train the UNet on images and ground truth (target masks)
 
 optional arguments:
   '--data-path', default='data/', help='dataset file path including ./TP-Dataset'
@@ -126,8 +126,14 @@ optional arguments:
 
 ```console
 python predict.py
+usage: predict.py [--weights_path WP] [--img_path IP]
+                [--txt_path TP] [--save_result SR]
+optional arguments:
+'--weights_path', default='./save_weights/model_best.pth', help='The root of TP-Dataset ground truth list file')
+'--img_path', default='data/TP-Dataset/JPEGImages', help='The path of testing sample images')
+'--txt_path', default='data/TP-Dataset/Index/predict.txt', help='The path of testing sample list')
+'--save_result', default='./predict', help='The path of saved predicted results in images')
 ```
-For simple, we have just fixed all these optional arguments inside the main function of predict.py, which can be changed manually.
 
 ## Citation
 
