@@ -35,20 +35,15 @@ Notation: The results in the table are all percentage data (%).
 ****
 * Clone this repo, and we'll call the directory that you cloned as ${GRFBNet_ROOT}
 
-* Install dependencies. CUDA 11.3, Python 3.6 / 3.7 / 3.8 and PyTorch = 1.10.0.
+* Install dependencies. CUDA, Python and PyTorch.
 
 &ensp;1. [Install CUDA](https://developer.nvidia.com/cuda-downloads)
-
-&ensp;2. Install anaconda, and reate conda environment:
-```bash
-conda create -n GRFBUNet
-conda activate GRFBUNet
-```
+&ensp;2. Install anaconda, and reate conda environment;
 &ensp;3. [Install PyTorch 1.13 or later](https://pytorch.org/get-started/locally/)
-
-&ensp;4. Install other dependencies
+&ensp;4. Install other dependencies.
+A typical script of the environment installation is given as follows:
 ```bash
-pip install -r requirements.txt
+bash demo.sh
 ```
 ## Data preparation
 ***
@@ -111,9 +106,7 @@ optional arguments:
 * After training phase, the models are saved in the file ./save_weights. At last, the testing images with the labels in predict.txt are predicted with
 
 ```console
-
-> python predict.py
-
+python predict.py
 ```
 For simple, we have just fixed all these optional arguments inside the main function of predict.py, which can be changed manually.
 
