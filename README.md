@@ -45,7 +45,7 @@ Notation: The results in the table are all percentage data (%).
 
 &ensp;4. Install other dependencies.
 
-A typical script of the environment installation is given as follows:
+A typical script of the environment installation (Linux) is given as follows:
 ```bash
 bash demo.sh
 ```
