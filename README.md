@@ -35,13 +35,13 @@ Notation: The results in the table are all percentage data (%).
 ****
 * Clone this repo, and we'll call the directory that you cloned as ${GRFBNet_ROOT}
 
-* Install dependencies. CUDA, Python and PyTorch.
+* Install dependencies. CUDA, Python and PyTorch:
 
-&ensp;1. [Install CUDA](https://developer.nvidia.com/cuda-downloads)
+&ensp;1. [Install CUDA](https://developer.nvidia.com/cuda-downloads);
 
-&ensp;2. Install anaconda, and reate conda environment
+&ensp;2. Install anaconda, and create conda environment;
 
-&ensp;3. [Install PyTorch 1.5.1 or later](https://pytorch.org/get-started/locally/)
+&ensp;3. [Install PyTorch 1.5.1 or later](https://pytorch.org/get-started/locally/);
 
 &ensp;4. Install other dependencies.
 
