@@ -131,8 +131,8 @@ usage: predict.py [--weights_path WP] [--img_path IP]
 
 optional arguments:
 '--weights_path', default='./save_weights/model_best.pth', help='The root of TP-Dataset ground truth list file')
-'--img_path', default='data/TP-Dataset/JPEGImages', help='The path of testing sample images')
-'--txt_path', default='data/TP-Dataset/Index/predict.txt', help='The path of testing sample list')
+'--img_path', default='./data/TP-Dataset/JPEGImages', help='The path of testing sample images')
+'--txt_path', default='./data/TP-Dataset/Index/predict.txt', help='The path of testing sample list')
 '--save_result', default='./predict', help='The path of saved predicted results in images')
 ```
 
