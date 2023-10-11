@@ -91,8 +91,8 @@ def main():
 def parse_args():
     import argparse
     parser.add_argument("--weights_path", default="./save_weights/model_best.pth", help="The root of TP-Dataset ground truth list file")
-    parser.add_argument("--img_path", default="data/TP-Dataset/JPEGImages", help="The path of testing sample images")
-    parser.add_argument("--txt_path", default="data/TP-Dataset/Index/predict.txt", help="The path of testing sample list")
+    parser.add_argument("--img_path", default="./data/TP-Dataset/JPEGImages", help="The path of testing sample images")
+    parser.add_argument("--txt_path", default="./data/TP-Dataset/Index/predict.txt", help="The path of testing sample list")
     parser.add_argument("--save_result", default="./predict", help="The path of saved predicted results in images")
 
     args = parser.parse_args()
