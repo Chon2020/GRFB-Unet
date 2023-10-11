@@ -106,7 +106,7 @@ usage: train.py [--data-path DP] [--num-classes NC] [--device D]
 Train the UNet on images and ground truth (target masks)
 
 optional arguments:
-  '--data-path', default='./data/', help='dataset file path including ./TP-Dataset'
+  '--data-path', default='data/', help='dataset file path including ./TP-Dataset'
   '-num-classes', default=1, type=int
   '--device', default='cuda', help='training device'
   '-b', '--batch-size', default=8, type=int
