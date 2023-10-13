@@ -90,7 +90,7 @@ def main():
 
 def parse_args():
     import argparse
-    parser = argparse.ArgumentParser(description="pytorch unet training")
+    parser = argparse.ArgumentParser(description="pytorch GRGB-UNet predicting")
     
     parser.add_argument("--weights_path", default="./save_weights/model_best.pth", help="The root of TP-Dataset ground truth list file")
     parser.add_argument("--img_path", default="./data/TP-Dataset/JPEGImages", help="The path of testing sample images")
