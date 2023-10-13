@@ -160,7 +160,7 @@ def main(args):
 
 def parse_args():
     import argparse
-    parser = argparse.ArgumentParser(description="pytorch unet training")
+    parser = argparse.ArgumentParser(description="pytorch GRFB-UNet training")
 
     parser.add_argument("--data-path", default="./data/", help="TP-Dataset root")
     # exclude background
