@@ -82,7 +82,7 @@ def main():
         prediction[prediction == 0] = 0
         mask = Image.fromarray(prediction)
         mask = mask.convert("L")
-        name = file[0:4]
+        name = file[-4:]
 
         mask.save(os.path.join(save_result, f'{name}.png'))
     fps = 1 / (total_time / 286)
