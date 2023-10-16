@@ -94,7 +94,7 @@ For each part in TP-Dataset, the images are stored in the file ./JPEGImages, and
 The indexes of train / validate / test samples are stored in flie ./Index.
 Then, you can replace the file ./data/TP-dataset in ${GRFBNet_ROOT} with the downloaded dataset for training phase. 
 
-Note that the images in this project are just some instances, they must be replaced by the aforemetioned dataset
+Note that the images in this project are just some instances, they must be replaced by the aforemetioned dataset.
 
 ### Training
 
