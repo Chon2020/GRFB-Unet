@@ -7,7 +7,7 @@ from torchvision import transforms
 import numpy as np
 from PIL import Image
 
-from src import UNet
+from src import GRFBUNet
 
 
 def time_synchronized():
@@ -34,7 +34,7 @@ def main():
     print("using {} device.".format(device))
 
     # create model
-    model = UNet(in_channels=3, num_classes=classes+1, base_c=32)
+    model = GRFBUNet(in_channels=3, num_classes=classes+1, base_c=32)
 
     # load weights
     model.load_state_dict(torch.load(weights_path, map_location='cpu')['model'])
