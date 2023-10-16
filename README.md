@@ -144,7 +144,7 @@ optional arguments:
 ***
 * With the prepared ground truth of the TP-Dataset and the saved prediction, the evalation indicators are calculated for these testing images in the list of predict.txt. The indicator results are saved in the log file.
 ```console
-python evaluating_indicator
+python evaluating_indicator.py
 usage: evaluating_indicator.py [--gt_dir GD] [--txt_dir TD]
                                [--pred_dir PD][--log_path LP]
 
