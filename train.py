@@ -5,7 +5,7 @@ import datetime
 import torch
 import random
 
-from src import UNet
+from src import GRFBUNet
 from train_utils import train_one_epoch, evaluate, create_lr_scheduler
 from my_dataset import DriveDataset
 import transforms as T
@@ -55,7 +55,7 @@ def get_transform(train, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
 
 
 def create_model(num_classes):
-    model = UNet(in_channels=3, num_classes=num_classes, base_c=32)
+    model = GRFBUNet(in_channels=3, num_classes=num_classes, base_c=32)
     return model
 
 
