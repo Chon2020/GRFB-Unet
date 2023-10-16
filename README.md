@@ -155,7 +155,6 @@ optional arguments:
 '--log_path', default='./log', help='The log root'
 
 ## Citation
-
 ```
 @article{Zhang2023GrfbUNetAN,
   title={GRFB-UNet: A New Multiscale Attention Network with Group Receptive Field Block for Tactile Paving Segmentation},
