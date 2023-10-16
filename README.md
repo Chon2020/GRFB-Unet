@@ -153,6 +153,7 @@ optional arguments:
 '--txt_dir', default='./data/TP-Dataset/Index/predict.txt', help='The root of predicted file'
 '--pred_dir', default='./predict', help='The root of predicted results of testing samples'
 '--log_path', default='./log', help='The log root'
+```
 
 ## Citation
 ```
