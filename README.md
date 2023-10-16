@@ -157,12 +157,15 @@ optional arguments:
 
 ## Citation
 ```
-@article{Zhang2023GrfbUNetAN,
-  title={GRFB-UNet: A New Multiscale Attention Network with Group Receptive Field Block for Tactile Paving Segmentation},
-  author={Xingli Zhang and Lei Liang and Sheng Zhao and Zhihui Wang},
-  journal={SSRN Electronic Journal},
-  year={2023},
-  url={https://api.semanticscholar.org/CorpusID:256625405}
+@article{ZHANG2023122109,
+title = {GRFB-UNet: A new multi-scale attention network with group receptive field block for tactile paving segmentation},
+journal = {Expert Systems with Applications},
+pages = {122109},
+year = {2023},
+issn = {0957-4174},
+doi = {https://doi.org/10.1016/j.eswa.2023.122109},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417423026118},
+author = {Xingli Zhang and Lei Liang and Shenglu Zhao and Zhihui Wang}
 }
 ```
 ## Acknowledgement
