@@ -20,7 +20,7 @@ def main():
     weights_path = "./save_weights/model_best.pth"
     img_path = "data/TP-Dataset/JPEGImages"
     txt_path = "data/TP-Dataset/Index/predict.txt"
-    save_result = "./predict"
+    save_result = "./predict/Part01"
 
     assert os.path.exists(weights_path), f"weights {weights_path} not found."
     assert os.path.exists(img_path), f"image {img_path} not found."
@@ -84,6 +84,9 @@ def main():
         mask = Image.fromarray(prediction)
         mask = mask.convert("L")
         name = file[-4:]
+
+        if not os.path.exists(save_result):
+            os.makedirs(save_result)
 
         mask.save(os.path.join(save_result, f'{name}.png'))
     fps = 1 / (total_time / count)
