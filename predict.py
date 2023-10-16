@@ -42,11 +42,12 @@ def main():
 
 
     total_time = 0
+    count = 0
     with open(os.path.join(txt_path), 'r') as f:
         file_name = [x.strip() for x in f.readlines() if len(x.strip()) > 0]
     for file in file_name:
       original_img = Image.open(os.path.join(img_path, file + ".jpg"))
-
+      count = count +1
       h = np.array(original_img).shape[0]
       w = np.array(original_img).shape[1]
 
@@ -85,7 +86,7 @@ def main():
         name = file[-4:]
 
         mask.save(os.path.join(save_result, f'{name}.png'))
-    fps = 1 / (total_time / 286)
+    fps = 1 / (total_time / count)
     print("FPS: {}".format(fps))
 
 def parse_args():
