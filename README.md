@@ -122,6 +122,8 @@ optional arguments:
   '--save-best', default=True, type=bool, help='only save best dice weights'
   '--amp', default=False, type=bool, help='Use torch.cuda.amp for mixed precision training'
 ```
+The pre-trained model can be downloaded from [Code Ocean](https://codeocean.com/capsule/1912151/tree). Note that project version in Code Ocean is older than this project in GitHub, but the pre-trained model of them enjoys the same format.
+
 ## Prediction
 ***
 * After training phase, the models are saved in the file ./save_weights. At last, the testing images with the labels in predict.txt are predicted with
