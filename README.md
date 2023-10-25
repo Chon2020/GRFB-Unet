@@ -66,7 +66,7 @@ conda install --yes --file requirements.txt
 
 ## Data preparation
 ***
-**The TP-dataset can be downloaded from follows links:**
+**The TP-dataset can be downloaded from the following links:**
 
 &ensp;1. [Baidu Net-disk](https://pan.baidu.com/s/1YgutfaiVE2KkqcKnWfGLSQ) (password: 9ope)
 
