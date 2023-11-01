@@ -1,6 +1,6 @@
 ### GRFB-UNet: A new multiscale attention network with group receptive filed block for tactile paving segmentation
 #### Xingli Zhang, Lei Liang, Shenglu Zhao, Zhihui Wang*
-#### So far, this work has been published in Expert System with Applications
+#### This work has been published in Expert System with Applications
 * Samples of annotated tactile paving on varied scenarios:
 ![](assets/img.png)
 
