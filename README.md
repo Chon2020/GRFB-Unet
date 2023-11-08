@@ -122,7 +122,7 @@ optional arguments:
   '--save-best', default=True, type=bool, help='only save best dice weights'
   '--amp', default=False, type=bool, help='Use torch.cuda.amp for mixed precision training'
 ```
-The pre-trained model can be downloaded from [Code Ocean](https://codeocean.com/capsule/1912151/tree) (/code/GRFB-Unet-main/save_weights/model_best.pth). Note that the project version in Code Ocean is older than this project in GitHub, but the pre-trained model of them enjoys the same format.
+The pre-trained model can be downloaded from [Code Ocean](https://codeocean.com/capsule/1912151/tree) (/code/GRFB-Unet-main/save_weights/model_best.pth). The trained models for other datasets are also provided there. Note that the project version in Code Ocean is older than this project in GitHub, but the pre-trained model of them enjoys the same format.
 
 ## Prediction
 ***
